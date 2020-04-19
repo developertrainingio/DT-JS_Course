@@ -1,0 +1,16 @@
+body {
+    background-color: cornflowerblue;
+}
+h1 {
+    color: goldenrod;
+}
+
+#someText {
+    color: red;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
+
+#age {
+    color: #123456;
+}
+
