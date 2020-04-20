@@ -1,5 +1,6 @@
 body {
     background-color: cornflowerblue;
+    margin-left: 10px;
 }
 h1 {
     color: goldenrod;
@@ -12,4 +13,37 @@ h1 {
 
 #age {
     color: #123456;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    /*grid-template-columns: repeat (2, 1fr); /* same as 1fr 1fr */
+    /*grid-template-columns: 1fr 2fr ; /* 2nd column is 2x as wide as first column */
+    grid-template-rows: 1fr 100px 1fr; /*this means that the first row is 1 unit, 2nd is exactly 100px tall and the 3rd row is 1 unit */
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "special map"; 
+
+   /* grid-template-areas: 
+        "nav map"
+        "special map"
+        "header map"; */
+}
+
+header {
+    grid-area: header;
+}
+.topnav {
+    grid-area: nav;
+}
+
+#special {
+    grid-area: special;
+}
+
+.map {
+    grid-area: map;
+    background-color: lemonchiffon;
 }
